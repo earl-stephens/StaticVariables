@@ -10,6 +10,13 @@ public class Cat {
 	//count is initialized when the class first loads
 	private static int count = 0;
 	
+	//static initialization block.  Only ran once, when the class is first
+	//loaded, before any constructor runs
+	//can be used to initialize static variables
+	static {
+		System.out.println("hello");
+	}
+	
 	public Cat(String name) {
 		this.name = name;
 		catID = count;
